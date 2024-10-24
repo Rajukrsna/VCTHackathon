@@ -40,10 +40,10 @@ npm install
 Set Up AWS Credentials
 Ensure you have your AWS credentials configured. You can do this by setting the environment variables or using the AWS CLI.
 
-Run the Application
-bash
-Copy code
+Run the Application:
+
 npm start
+
 Usage
 Navigate to http://localhost:3000 in your web browser.
 Enter your query in the chat interface and receive responses powered by AWS Bedrock.
@@ -53,11 +53,10 @@ Model Configuration: Use the amazon.titan-embed-text-v1 model for query processi
 Knowledge Base Creation
 Upload your data to an S3 bucket.
 Create a knowledge base using the AWS Bedrock console, following security best practices with IAM roles.
+
 Lambda Function
 Here's an example of the Lambda function that integrates with AWS Bedrock:
 
-javascript
-Copy code
 const AWS = require('aws-sdk');
 const bedrock = new AWS.Bedrock();
 
